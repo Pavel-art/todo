@@ -1,0 +1,1 @@
+package com.example.todo.domain.repositoryimport androidx.lifecycle.MutableLiveDataimport com.example.todo.domain.entity.TodoModelinterface Repository {    fun deleteTodo(todo: TodoModel)    fun addTodo(todo: TodoModel)    fun getTodoItem(todoId: Int):TodoModel    fun getAllTodos(): MutableLiveData<List<TodoModel>>    fun completedTodo(todo: TodoModel)}

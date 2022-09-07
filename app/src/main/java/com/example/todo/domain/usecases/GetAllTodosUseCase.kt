@@ -1,0 +1,1 @@
+package com.example.todo.domain.usecasesimport androidx.lifecycle.MutableLiveDataimport com.example.todo.domain.entity.TodoModelimport com.example.todo.domain.repository.Repositoryclass GetAllTodosUseCase(private val repository: Repository) {    operator fun invoke(): MutableLiveData<List<TodoModel>> {        return repository.getAllTodos()    }}

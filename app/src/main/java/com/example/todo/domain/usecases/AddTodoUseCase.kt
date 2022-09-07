@@ -1,0 +1,1 @@
+package com.example.todo.domain.usecasesimport com.example.todo.domain.entity.TodoModelimport com.example.todo.domain.repository.Repositoryclass AddTodoUseCase(private val repository: Repository) {    operator fun invoke(todo: TodoModel) {        repository.addTodo(todo)    }}

@@ -1,0 +1,1 @@
+package com.example.todo.domain.entitydata class TodoModel(    var id: Int = UNDEFINED_ID,    val title: String,    val completed: Boolean = false) {    companion object {        const val UNDEFINED_ID = -1    }}
